@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-public class JavaSort<T extends Comparable<T>> {
+public class JavaSort<T extends Comparable<T>> implements Sort<T> {
 
     public List<T> sort(List<T> list) {
         List<T> output = new ArrayList<T>(list);
@@ -14,6 +14,4 @@ public class JavaSort<T extends Comparable<T>> {
         return output;
 
     }
-
-
 }
